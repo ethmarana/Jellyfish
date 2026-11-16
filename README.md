@@ -5,7 +5,7 @@
   <img src="assets/jellyfish-color-flow.gif" width="480" alt="A large ASCII jellyfish with copper, gold, and green waves moving down its tentacles">
 </p>
 
-Copper, old gold, olive, and celadon spiral around the bell and down the tentacles as bubbles drift past. The animation scales with your window and uses your terminal profile’s background, including its transparency.
+Copper, old gold, olive, and celadon spiral around the bell and down the tentacles as bubbles drift past. The animation scales with your window and uses your terminal profile’s background, including its transparency. Jellyfish is modeled after the Sea Nettle Jellyfish.
 
 ## Quick start
 
@@ -33,3 +33,9 @@ Add the `export PATH` line to your shell’s startup file, such as `~/.zshrc` on
 ## How it works
 
 The renderer intersects view rays with a tilted ellipsoid for the bell and samples 3D curves for the tentacles. A depth buffer decides which glyph appears in each cell. The palette shifts with both angle and distance along the jellyfish, sending color around the bell and along the strands.
+
+## Preferences
+
+Inspect the jellyfish-3d.py file with your text editor of choosing. All variables at the topic can be edited for refresh rate,
+color, amount of tentacles, etc. To remove the green background and use the termina's default background, go to the palette function and set background = ESC + "49m".
+
